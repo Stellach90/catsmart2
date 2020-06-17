@@ -1,0 +1,81 @@
+<link rel="stylesheet" type="text/css" href="wetfood.css">
+<main>
+  <h2>{{{title}}}</h2>
+        <section class="filter">
+          <h3>Filters</h3>
+          <form>
+           
+            <fieldset>
+              <legend>Lifestage</legend>
+              <ul>
+                <li><input type="checkbox" name="Age" value="Kitten" id="Kitten"> <label for="Kitten">Kitten</label></li>
+                <li><input type="checkbox" name="Age" value="Adult" id="Adult"> <label for="1~3 Years">Adult 1~10 Years</label></li>
+                <li><input type="checkbox" name="Age" value="Senior" id="Senior"> <label for="4~6 Years">Senior 10~ Years</label></li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Nutrition option</legend>
+              <ul>
+                <li><input type="radio" name="Age" value="Gluten" id="Gluten"> <label for="Gluten">Gluten free</label></li>
+                <li><input type="radio" name="Age" value="Grain" id="Grain"> <label for="Grain">Grain free</label></li>
+                <li><input type="radio" name="Age" value="Organic" id="Organic"> <label for="Organic">Organic</label></li>
+                <li><input type="radio" name="Age" value="GMO" id="GMO"> <label for="GMO">Non-GMO</label></li>
+                <li><input type="radio" name="Age" value="protain" id="protain"> <label for="protain">High protain</label></li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Rating above</legend>
+              <ol>
+                <li>
+                  <input type="radio" name="rating" value="4" id="aboveFour">
+                  <label for="aaboveFour">
+                    <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_border</i>
+                  </label>
+                </li>
+                <li>
+                  <input type="radio" name="rating" value="3" id="aboveThree">
+                  <label for="aboveThree">
+                    <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_border</i><i class="material-icons">star_border</i>
+                  </label>
+                </li>
+                <li>
+                  <input type="radio" name="rating" value="2" id="aboveTwo">
+                  <label for="aboveTwo">
+                    <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_border</i><i class="material-icons">star_border</i><i class="material-icons">star_border</i>
+                  </label>
+                </li>
+                <li>
+                  <input type="radio" name="rating" value="1" id="aboveOne">
+                  <label for="aboveOne">
+                    <i class="material-icons">star</i><i class="material-icons">star_border</i><i class="material-icons">star_border</i><i class="material-icons">star_border</i><i class="material-icons">star_border</i>
+                  </label>
+                </li>
+              </ol>
+            </fieldset>
+          </form>
+        </section>
+        <section class="productdisplay">
+          <button id="toggleView" class="toggleView">Change Arrey</button>
+          <div id="products">
+            <script src="wetfood.js"></script>
+          </div>
+        </section>
+  
+        <!-- Indicate current page number -->
+        <footer class="center">
+          <p>1-6 of 127 products found</p>
+          <nav aria-label="Product Pages">
+            <a href="#" aria-label="Previous page">prev</a>
+            <ol>
+              <li><a href="#" aria-label="Current Page, Page 1" aria-current="true">1</a></li>
+              <li><a href="#" aria-label="Page 2">2</a></li>
+              <li><a href="#" aria-label="Page 3">3</a></li>
+              <li><a href="#" aria-label="Page 4">4</a></li>
+              <li><a href="#" aria-label="Page 5">5</a></li>
+            </ol>
+            <a href="#" aria-label="Next page">next</a>
+          </nav>
+        </footer>
+      </main>
+
+      <script src="main.js"></script>

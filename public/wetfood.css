@@ -1,0 +1,137 @@
+#pagetitle{display: block;}
+
+.container{overflow: hidden;}
+.container h1{padding-bottom: 3em;}
+.container h2{padding: 15px 30px;} 
+.container form{display: grid; float: right;}
+.container form fieldset{border-style: none; display: inline-block;}
+.container form fieldset h3{padding: 10px 15px;}
+.container form fieldset+fieldset{padding-left: 35px;}
+/* .container form fieldset:nth-child(1){position: relative; bottom: 125px;} */
+.container form fieldset legend{padding-bottom: 10px; font-size: 1em;}
+.container form fieldset ul,ol{padding-left: 10px;}
+.container form fieldset ul li{font-size: 0.8em;}
+.container form fieldset ul li+li{padding-top: 4px;}
+.container form fieldset ol li{display: block;}
+.container form fieldset ol li i{position: relative; color: #f0b5b1; font-size: 1.1em;}
+
+main{margin: auto; width: 85%; padding: 4em 1em; overflow: hidden;}
+
+main .filter{width: 15%; float: left; border: 1px solid var(--main); border-radius: 1em; padding: 1em;}
+main .filter h2{text-align: left;} 
+main .filter form{display: grid; padding-top: 1em;}
+main .filter form fieldset{border-style: none; display: inline-block; padding: 0;}
+main .filter form fieldset+fieldset{margin-top: 1em;}
+main .filter form fieldset legend{padding-bottom: 0.5em;}
+main .filter form fieldset ul,ol{padding-left: 0.8em;}
+main .filter form fieldset ul li{font-size: 0.8em;}
+main .filter form fieldset ul li+li{padding-top: 4px;}
+main .filter form fieldset ol li{display: block;}
+main .filter form fieldset ol li i{position: relative; color: #f0b5b1; font-size: 1.1em;}
+
+main .productdisplay{text-align: center;}
+main section div{display: grid; grid-template-columns: 1fr 1fr 1fr; grid-column-gap: 10px; grid-row-gap: 15px;}
+main section .sale{position: absolute; width: 60px; height: 60px; background-size: cover;}
+main section .toggleView{position: relative; left: -40%; background-image: url(); padding: 10px 12px; z-index: 0; border-radius: 0.5em;}
+main section button:hover{background-color: #f0b5b1;}
+main section article{padding-top: 40px;}
+
+main section article:nth-child(n+4){padding-top: 120px;}
+main section article .productimg{position: relative; display: inline-block;}
+main section article img{cursor: pointer;}
+main section article h3{width: 90%; height: 4em; margin: auto; padding-top: 2em;}
+main section article h3 a{font-size: 1.2em;}
+main section article p{padding: 1em 1.8em; font-size: 1em; width: 90%; height: 5em; margin: auto; margin-bottom: 0;}
+
+main section article form{width: 75%; margin: auto;}
+main section article form fieldset{float: left; width: 50%;}
+main section article form fieldset select{width: 100%;}
+main section article form fieldset ul{padding-top: 1.2em;}
+main section article form fieldset ul li+li{padding-top: 0.7em;}
+main section article form footer dl{width: 100%; overflow: hidden; padding-top: 20px;}
+main section article form footer dl dd .material-icons{font-size: 1em;}
+main section article form footer data ins{text-decoration: none; padding-left: 15px; font-size: 1.4em; font-weight: bold; color: #e03c32;}
+main section article form footer button:hover{color: #024886; background-color: unset;}
+main section article form footer button span{font-size: 1.4em;}
+
+
+
+
+main section article div a{left: 120px; bottom: 32px; font-size: 0.9em;}
+main section article div a:hover {color: #024886;}
+main section article div span{font-size: 1.9em;}
+main section article div span del{font-size: 0.7em; color: #606060; padding-right: 10px;}
+main section article div span ins{text-decoration: none;}
+main section article button{border: none;}
+main .buy{display: grid; grid-template-columns: 1fr 1.5fr; padding-top: 1em;}
+main .buy div{grid-template-columns: 1fr 1fr;}
+
+main footer{clear: both;}
+main footer p{font-size: 1.2em;}
+main footer ol{display: inline-block; width: 160px; height: 50px; line-height: 50px; padding: 5px 15px; margin: 0;}
+main footer ol li{display: inline-block;}
+main footer ol li+li{padding-left: 10px;}
+main footer ol li a{display: inline-block;}
+main footer ol li:hover a{color: #024886; text-decoration: underline; font-size: 1.4em;}
+
+.grid-view{grid-template-columns: 1fr 1fr;}
+.none{display: none;}
+.callout { display: inline-block; padding: 1em; border-radius: 100%; background-color: #606060; color: #ffffff; font-size: 0.5em; box-shadow: 0 0 0.4em rgba(0,0,0,0.4);}
+.urgent {position: absolute; background-color: #e03c32;}
+.urgent2 {position: absolute; background-color: #024886;}
+
+
+del::before {content: "$";}
+ins::before {content: "$";}
+
+.num {float: right; top: 0.2em; right: 3.2em; background-color: #024886; color: #ffffff; font-size: 1.7em; padding: 0.3em; border-radius: 1em;}
+
+
+/* 
+@media screen and (min-width: 768px){
+	.header-top .top-icon li a i{font-size: 2.3em;}
+	.header-top nav .topMenu .item .tit{font-size: 1.5em;}
+	.header-top nav .topMenu .item li{font-size: 1.2em; line-height: 35px;}
+	.info .left li{float: left;}
+
+}
+
+
+@media screen and (min-width: 1200px){
+	.header-top .logo{width: 280px;}
+	.header-top nav .topMenu .item .tit{font-size: 1.8em;}
+	.header-top nav .topMenu .item ul li{font-size: 1.4em; line-height: 33px;}
+	
+	.container form h2{display: inline-block;}
+	.container form fieldset{float: none;}
+	
+	
+} */
+
+
+/* 
+@media screen and (min-width: 50em) {
+	.toggleView {
+	  display: inline-block;
+	}
+	.grid-view {
+	  grid-template-columns: 1fr 1fr 1fr;
+	}
+	.grid-view .course-weeks {
+	  display: none;
+	}
+  }
+  
+  @media screen and (min-width: 70em) {
+  	.grid-view {
+	  grid-template-columns: 1fr;
+	}
+  } */
+	
+
+	
+
+
+
+
+

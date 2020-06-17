@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Hello</title>
+  </head>
+  <body>
+    {{!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/">Portfolio</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav> --}}
+<header class="header-top">
+        
+    <!-- Search for a product (non-functional) -->
+   <div class="topbar">
+     <div class="logo">
+       <a href="/"><img src="img/catsmart-logo.png" alt="PetSmart Logo" class="logoimg"></a>
+     </div>
+     <div class="user">
+       <form>
+         <fieldset class="searchbar">
+           <label for="search"></label>
+           <input type="text" name="search" id="search" placeholder="Search anything!" oninput="loadProductByName(event)">
+         </fieldset>
+         <button type="button" class="searchbtn"><i class="material-icons">search</i></button>
+       </form>
+ 
+       <!-- Additional nav links -->
+       <ul class="top-icon">
+         <li><a href=""><img src="./img/heart.png" alt="heart image">Sign in</a></li>
+         <li><a href="#"><span class="material-icons" id="listNum">favorite_border</span></a></li>
+         <li><a href="#"><span class="material-icons cart">shopping_cart</span></a><div class="num" id="cartNum"></div></li>
+       </ul>
+     </div>
+   </div>
+
+   <!-- Site logo -->
+   <nav class="mobilemenu">
+     <div class="mymanu">
+       <input type="checkbox" id="manuicon">
+       <aside>
+         <label for="manuicon"><i></i><i></i><i></i></label>
+         <ul class="mypage">
+           <a href="#"><i class="material-icons">person</i><li>My Page</li>
+           </a>
+         </ul>
+         <ul class="mypagelist">
+           <li><a><i class="material-icons">arrow_right</i>My Order</a></li>
+           <li><a><i class="material-icons">arrow_right</i>My Reservation</a></li>
+           <li><a><i class="material-icons">arrow_right</i>QnA</a></li>
+         </ul>
+       </aside>
+     </div>
+   </nav>
+   <nav>
+     <div class="topMenu">
+       <div class="item">
+         <p class="tit">Food</p>
+         <ul>
+           <li><a href="wetfood">Wet Food</a></li>
+           <li><a href="dryfood">Dry Food</a></li>
+           <li><a href="catnip">Catnip & Grass</a></li>
+         </ul>
+       </div>
+       <div class="item">
+         <p class="tit">Litter</p>
+         <ul>
+           <li><a>Litter</a></li>
+           <li><a>Litter Boxes</a></li>
+           <li><a>Odor Removers</a></li>
+           <li><a>Litter Scoops</a></li>
+         </ul>
+       </div>
+       <div class="item">
+         <p class="tit">Toys</p>
+         <ul>
+           <li><a>Feather Toys</a></li>
+           <li><a>Balls</a></li>
+           <li><a>Laser Toys</a></li>
+           <li><a>Catnip Toys</a></li>
+         </ul>
+       </div>
+       <div class="item">
+         <p class="tit">Furniture</p>
+         <ul>
+           <li><a>Cat House</a></li>
+           <li><a>Beds</a></li>
+           <li><a>Bed Mats</a></li>
+           <li><a>Windows Perches</a></li>
+         </ul>
+       </div>
+       <div class="item">
+         <p class="tit">Grooming</p>
+         <ul>
+           <li><a>Cat House</a></li>
+           <li><a>Beds</a></li>
+           <li><a>Bed Mats</a></li>
+           <li><a>Windows Perches</a></li>
+         </ul>
+       </div>
+       <div class="item">
+         <p class="tit">Wellness</p>
+         <ul>
+           <li><a>Cat House</a></li>
+           <li><a>Beds</a></li>
+           <li><a>Bed Mats</a></li>
+           <li><a>Windows Perches</a></li>
+         </ul>
+       </div>
+     </div>
+     
+   </nav>
+ 
+  </header>
+  <script src="main.js"></script>
+    <div class="container">
+      <h1 id="pagetitle"></h1>
+        {{{body}}}
+    </div>
+
+    <footer class="info">
+        <nav>
+          <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Charities</a></li>
+            <li><a href="">Help</a></li>
+            <li><a href="">Treats program</a></li>
+          </ul>
+        </nav>
+        <ul class="sns">
+          <li><a href="#"><img src="https://img.icons8.com/color/48/000000/facebook-new.png"></a></li>
+          <li><a href="#"><img src="https://img.icons8.com/color/48/000000/instagram-new.png"></a></li>
+          <li><a href="#"><img src="https://img.icons8.com/color/48/000000/twitter.png"></a></li>
+        </ul>
+        <p>&copy; Copyright, 2020. Stella Cheon</p>
+        <nav>
+          <ul class="left">
+            <li><a href="#">Recalls</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Internet-based ads</a></li>
+          </ul>
+        </nav>
+          
+      </footer>
+      
+ 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  </body>
+</html>
